@@ -54,6 +54,7 @@ class Planet(Base):
     id = Column(Integer, primary_key = True)
     name = Column(String(400), nullable = False)
     habitats = Column(String(400), nullable = False)
+    
 
 class Character(Base):
     __tablename__ = 'character'
@@ -62,7 +63,9 @@ class Character(Base):
     occupation = Column(String(400), nullable = False)
     powers = Column(Boolean, nullable = False)
     origin_planet = Column(String(400), nullable = False)
-
+    age = Column(String(400), nullable = False)
+    heigth = Column(String(400), nullable = False)
+    wheigth = Column(String(400), nullable = False)
 
 
 
